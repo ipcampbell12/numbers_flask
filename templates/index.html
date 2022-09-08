@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Facts</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<h1>Number Facts</h1>
+<br>
+<h3>Enter a number to get its facts!</h3>
+<form action="message" method="post">
+    {% for message in get_flashed_messages()%}
+    <p>{{message}}</p>
+    {% endfor %}
+    <br>
+    <input type="text" name="num_input" id="box">
+    <br>
+    <br>
+    <input type="submit" value="Get Your Number Facts!" id="button">
+</form>
+<br>
+<br>
+<br>
+<br>
+
+
+<body>
+
+</body>
+
+</html>

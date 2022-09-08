@@ -1,0 +1,93 @@
+body {
+    background-color: aliceblue;
+    text-align: center;
+}
+
+h1 {
+    position: relative;
+    top: 1000px;
+    animation-name: downwards;
+    animation-duration: .8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes downwards {
+    0% {
+        top: -50px;
+    }
+
+    100% {
+        top: 100px;
+    }
+
+}
+
+h3 {
+    position: relative;
+    top: 125px;
+}
+
+form {
+    position: relative;
+    top: 150px;
+}
+
+
+#button {
+    position: relative;
+    margin: 2px;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: black;
+    width: 160px;
+    height: 50px;
+    bottom: 700px;
+    background-color: aqua;
+    text-align: center;
+    animation-name: upwards;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+#button:hover {
+    background-color: aquamarine;
+    border-color: azure;
+}
+
+@keyframes upwards {
+    0% {
+        top: 600px
+    }
+
+
+    40% {
+        top: 120px
+    }
+
+    50% {
+        top: 70px;
+
+    }
+
+    60% {
+        top: 110px
+    }
+
+    70% {
+        top: 80px
+    }
+
+    80% {
+        top: 105px
+    }
+
+    90% {
+        top: 90px
+    }
+
+    100% {
+        top: 100px;
+    }
+}
