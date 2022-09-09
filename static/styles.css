@@ -1,6 +1,9 @@
 body {
     background-color: aliceblue;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 
 h1 {
@@ -30,11 +33,12 @@ h3 {
 
 form {
     position: relative;
+
     top: 150px;
 }
 
 
-#button {
+#button1 {
     position: relative;
     margin: 2px;
     border-width: 2px;
@@ -51,7 +55,7 @@ form {
     animation-timing-function: ease-in;
 }
 
-#button:hover {
+#button1:hover {
     background-color: aquamarine;
     border-color: azure;
 }
@@ -111,7 +115,7 @@ form {
 
 }
 
-#clear:hover {
+#buitton2:hover {
     background-color: aquamarine;
     border-color: azure;
 }
@@ -121,33 +125,33 @@ form {
         top: 600px
     }
 
+
     40% {
-        top: 270px;
+        top: 120px
     }
 
     50% {
-        top: 220px;
+        top: 70px;
+
     }
 
     60% {
-        top: 260px;
+        top: 110px
     }
 
     70% {
-        top: 230px;
+        top: 80px
     }
 
     80% {
-        top: 255px;
+        top: 105px
     }
 
     90% {
-        top: 240px;
+        top: 90px
     }
 
     100% {
-        top: 250px;
+        top: 100px;
     }
-
-
 }
