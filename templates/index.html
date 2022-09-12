@@ -10,20 +10,36 @@
 </head>
 <h1>Number Facts</h1>
 <br>
-<h3>Enter a number to get its facts!</h3>
-<form action="message" method="post">
-    {% for message in get_flashed_messages()%}
-    <p>{{message}}</p>
-    {% endfor %}
-    <br>
-    <input type="text" name="num_input" id="box">
-    <br>
-    <br>
-    <input type="submit" name="submit" value="Get facts" id="button1">
-    <input type="submit" name="submit" value="Clear output" id="button2">
+<div class="container">
+    <h3>Enter a number to get its facts!</h3>
+    <form action="message" method="post">
+        {% for message in get_flashed_messages()%}
+        <p>{{message}}</p>
+        {% endfor %}
+        <br>
+        <input type="text" name="num_input" id="box">
+        <br>
+        <br>
+        <input type="submit" name="submit" value="Get facts" id="button1">
+        <input type="submit" name="submit" value="Clear output" id="button2">
 
-</form>
-<br>
+    </form>
+    <br>
+    <table class="table">
+        <tr>
+            <th>Number</th>
+            <th>Date Added</th>
+        </tr>
+        {% for number in numbers %}
+        <tr>
+            <td>{{number.number}}</td>
+            <td>{{number.date_created.date()}}</td>
+        </tr>
+        {% endfor %}
+
+
+    </table>
+</div>
 
 <body>
 

@@ -1,9 +1,9 @@
 body {
     background-color: aliceblue;
-    text-align: center;
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
+
 }
 
 h1 {
@@ -28,8 +28,18 @@ h1 {
 
 h3 {
     position: relative;
+
     top: 125px;
 }
+
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+
+}
+
 
 form {
     position: relative;
@@ -40,6 +50,7 @@ form {
 
 #button1 {
     position: relative;
+    justify-self: right;
     margin: 2px;
     border-width: 2px;
     border-radius: 5px;
@@ -99,6 +110,7 @@ form {
 #button2 {
 
     position: relative;
+    justify-self: right;
     margin: 2px;
     border-width: 2px;
     border-radius: 5px;
@@ -154,4 +166,21 @@ form {
     100% {
         top: 100px;
     }
+}
+
+.table {
+    position: relative;
+    justify-self: left;
+    border: 5px;
+    margin: 10px;
+    padding: 10px;
+    border-color: black;
+
+}
+
+.table th {
+    margin: 10px;
+    padding: 10px;
+    border-color: black;
+
 }
