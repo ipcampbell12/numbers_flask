@@ -26,31 +26,38 @@ h1 {
 
 }
 
-h3 {
-    position: relative;
-
-    top: 125px;
-}
-
 
 .container {
     position: relative;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center
+}
 
+h3 {
+    position: relative;
+    top: 125px;
 }
 
 
 form {
     position: relative;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     top: 150px;
+}
+
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 
 #button1 {
     position: relative;
-    justify-self: right;
     margin: 2px;
     border-width: 2px;
     border-radius: 5px;
@@ -110,7 +117,6 @@ form {
 #button2 {
 
     position: relative;
-    justify-self: right;
     margin: 2px;
     border-width: 2px;
     border-radius: 5px;
@@ -168,7 +174,7 @@ form {
     }
 }
 
-.table {
+/* .table {
     position: relative;
     justify-self: left;
     border: 5px;
@@ -183,4 +189,4 @@ form {
     padding: 10px;
     border-color: black;
 
-}
+} */
