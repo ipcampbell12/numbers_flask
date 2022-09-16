@@ -1,4 +1,3 @@
-from plistlib import load
 from flask import Flask, request, flash, render_template, session, redirect
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
